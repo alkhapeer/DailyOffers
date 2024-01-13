@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>عرض اليوم - واجهة المسؤول</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>عرض اليوم - واجهة المسؤول</h1>
+    </header>
+    <main>
+      <section class="offers">
+        <h2>العروض الموجودة</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>العنوان</th>
+              <th>الوصف</th>
+              <th>المدينة</th>
+              <th>التاريخ</th>
+              <th>الإجراءات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>عرض 1</td>
+              <td>عرض ترويجي بنسبة 50% على الملابس</td>
+              <td>القاهرة</td>
+              <td>2024-01-15</td>
+              <td>
+                <a href="#">تعديل</a>
+                <a href="#">حذف</a>
+              </td>
+            </tr>
+            <tr>
+              <td>عرض 2</td>
+              <td>عرض تخفيضات على الأجهزة الإلكترونية</td>
+              <td>الإسكندرية</td>
+              <td>2024-01-16</td>
+              <td>
+                <a href="#">تعديل</a>
+                <a href="#">حذف</a>
+              </td>
+            </tr>
+            <tr>
+              <td>عرض 3</td>
+              <td>عرض حصري على الرحلات الجوية</td>
+              <td>الغردقة</td>
+              <td>2024-01-17</td>
+              <td>
+                <a href="#">تعديل</a>
+                <a href="#">حذف</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="new-offer">
+        <h2>إضافة عرض جديد</h2>
+        <form action="#">
+          <div class="field">
+            <label for="title">العنوان</label>
+            <input type="text" id="title" />
+          </div>
+          <div class="field">
+            <label for="description">الوصف</label>
+            <textarea id="description"></textarea>
+          </div>
+          <div class="field">
+            <label for="city">المدينة</label>
+            <select id="city">
+              <option value="القاهرة">القاهرة</option>
+              <option value="الإسكندرية">الإسكندرية</option>
+              <option value="الغردقة">الغردقة</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="date">التاريخ</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="field">
+            <label for="image">الصورة</label>
+            <input type="file" id="image" />
+          </div>
+          <div class="field">
+            <label for="category">الفئة</label>
+            <select id="category">
+              <option value="طعام">طعام</option>
+              <option value="ملابس">ملابس</option>
+              <option value="إلكترونيات">إلكترونيات</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="brand">العلامة التجارية</label>
+            <select id="brand">
+              <option value="Nike">Nike</option>
+              <option value="Adidas">Adidas</option>
+              <option value="Apple">Apple</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="location">الموقع</label>
+            <select id="location">
+              <option value="القاهرة">القاهرة</option>
+              <option value="الإسكندرية">الإسكندرية</option>
+              <option value="الغردقة">الغردقة</option>
+            </select>
+          </div>
+          <button type="submit">إضافة</button>
+        </form>
+      </section>
+    </main>
